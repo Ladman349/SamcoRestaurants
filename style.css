@@ -429,12 +429,14 @@ img { display: block; max-width: 100%; }
 
 .card-actions {
   margin-top: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
 .card-btn {
+  flex: 1 1 calc(50% - 5px);
+  min-width: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -475,6 +477,16 @@ img { display: block; max-width: 100%; }
   border-color: rgba(109,31,31,0.2);
   color: var(--red);
 }
+
+.card-btn-gold {
+  background: var(--gold);
+  color: var(--white);
+}
+
+.card-btn-gold:hover {
+  background: #90632d;
+}
+
 
 /* ── FLAGSHIP badge override ── */
 .branch-card.flagship .card-tag {
