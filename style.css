@@ -430,25 +430,26 @@ img { display: block; max-width: 100%; }
 .card-actions {
   margin-top: auto;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
 .card-btn {
-  flex: 1 1 calc(50% - 5px);
-  min-width: 120px;
+  flex: 1 1 0;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  gap: 6px;
   height: 44px;
+  padding: 0 8px;
   border-radius: var(--r-sm);
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   font-weight: 600;
   cursor: pointer;
   border: 1px solid transparent;
   transition: all 0.18s ease;
+  white-space: nowrap;
 }
 
 .card-btn svg {
@@ -697,6 +698,20 @@ img { display: block; max-width: 100%; }
 
   .phone-secondary {
     font-size: 0.78rem;
+  }
+
+  .card-actions {
+    gap: 5px;
+  }
+
+  .card-btn {
+    font-size: 0.72rem;
+    padding: 0 4px;
+    gap: 0;
+  }
+
+  .card-btn svg {
+    display: none;
   }
 
   .topbar-link {
