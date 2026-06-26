@@ -468,12 +468,12 @@ img { display: block; max-width: 100%; }
 }
 
 .btn-banquet {
-  background: #a75656;
-  color: #ffffff;
+  background: var(--red);
+  color: #fff7ef;
 }
 
 .btn-banquet:hover {
-  background: #8f4242;
+  background: var(--red-dark);
 }
 
 .btn-directions {
@@ -715,6 +715,10 @@ img { display: block; max-width: 100%; }
     display: block;
     width: 11px;
     height: 11px;
+  }
+
+  .btn-directions svg.btn-icon-left {
+    display: none;
   }
 
   .topbar-link {
