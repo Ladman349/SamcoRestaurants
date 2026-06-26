@@ -240,6 +240,40 @@ img { display: block; max-width: 100%; }
   background: rgba(255,255,255,0.14);
 }
 
+.swiggy-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 8px;
+  background: #fc8019;
+  color: #ffffff;
+  border: 1px solid #fc8019;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  align-self: center;
+}
+
+.swiggy-icon-container {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #fc8019;
+}
+
+.swiggy-icon-container svg {
+  width: 11px;
+  height: 11px;
+}
+
 /* ── DIVIDER ── */
 .section-divider {
   padding: 14px 0 0;
